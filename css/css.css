@@ -1,0 +1,372 @@
+html{
+	background-image: url("../img/fon.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  }
+
+*{
+	margin:0;
+	padding: 0;
+	margin: auto;
+}
+
+@media screen and (min-width: 320px) {
+	.header{
+	  height: 300px;
+	}
+
+}
+p{
+	margin-left: 30px;
+}
+
+body{
+	width: 80%;
+	margin-left: 10%;
+	 overflow-x: hidden; 
+	
+ }
+
+/*Шапка*/
+.header{
+	border: 1px solid red;
+	border: transparent;
+	height: 100px;
+	background-color: #8B0000; 
+	
+}
+
+/*Логотип*/
+.logo{
+	height: 100px;
+	margin-top: -0px;
+}
+
+/*Меню*/
+.menu ul{
+	display: flex;
+	margin-left: 200px;
+	margin-top: -55px;
+}
+
+.menu li{
+	display: flex;
+	margin-right: 20px;
+	color: white;
+}
+.menu a{
+  	color: black;
+  	text-decoration: none;
+}
+
+.menu a:hover {
+  	text-decoration: underline;
+  	color: red;
+}
+
+
+/* Стиль для слайдера */
+.slider {
+	position: relative;
+   max-width: 80%;
+   margin: 20px auto;
+	box-shadow: 0 0 5px #000000;
+	margin-top: 50px;
+}
+
+.slider input[name="switch"] {
+	display: none;
+}
+
+.switch{
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+	text-align: center;
+	width: 100%;
+}
+
+.switch label {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	margin: 0 3px;
+	box-shadow: 0 0 5px #000000;
+	border-radius: 50%;
+	border: 3px solid #000000;
+	background-color: #d92124;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+   background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+	background-color: white;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+	background-color: white;
+}
+#btn4:checked~.switch label[for="btn4"] {
+	background-color: white;
+}
+#btn5:checked~.switch label[for="btn5"] {
+	background-color: white;
+}
+
+.slider-inner {
+	overflow: hidden;
+}
+
+.slides {
+	display: flex;
+   width: 100%;
+   transition: all 0.5s;
+}
+
+.slides img {
+	width: 100%;
+	flex-shrink:0;
+}
+
+#btn1:checked~.slider-inner .slides {
+	transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+	transform: translateX(-100%);
+}
+
+#btn3:checked~.slider-inner .slides {
+	transform: translateX(-200%);
+}
+#btn4:checked~.slider-inner .slides {
+	transform: translateX(-300%);
+}
+#btn5:checked~.slider-inner .slides {
+	transform: translateX(-400%);
+}
+
+
+
+/*о нас*/
+.onas{
+	margin-top: 100px;
+}
+.onas img{
+	margin-left: 10%;
+
+}
+
+.aboute h2{
+	text-align: center;
+}
+
+.aboute h1{
+	text-align: center;
+	margin-top: 100px;
+}
+
+
+.aboute img{
+	margin-top: 50px;
+	height: 400px;
+	border-radius: 20px;
+	margin-left: -100px;
+	margin: 0 auto;
+	display: block;
+}
+
+.block{
+	border: 1px solid black;
+	border: transparent;
+	height: 305px;
+	margin-top: 100px;
+	background-color: rgb(255, 255, 255, 0.6);
+}
+.block h1{
+	text-align: center;
+	margin-top: 100px;
+}
+
+/*Форма входа и регистрации*/
+form{
+	width: 500px;
+	display: block;
+	flex-direction: column;
+	margin-left: 492px;
+	justify-content: center;
+	position: absolute;
+	margin-top: 250px;
+  color: #fff;
+}
+
+form a{
+  color: #fff;
+	text-decoration: none;
+}
+
+form input{
+	padding: 5px;
+	font-size: 20px;
+	text-align: center;
+	width: 400px;
+	margin-top: 25px;
+	background-color: white;
+   border: 2px solid black;
+	margin-left: 41px;
+	border-radius: 50px;
+  bottom: 10px;
+}
+form button{
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  width: 400px;
+  margin-top: 25px;
+  background-color: white;
+	 border: 2px solid black;
+  margin-left: 41px;
+  border-radius: 50px;
+  bottom: 10px;
+  display: block;
+}
+
+form textarea{
+  display: block;
+	margin: 0 auto;
+}
+
+form .vh{
+	margin-left: 170px;
+	width: 150px;
+}
+
+form .vh:hover{
+	color: white;
+	background-color: red;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+form .vh1{
+	margin-left: 135px;
+	width: 220px;
+}
+
+form .vh1:hover{
+	color: white;
+	background-color: red;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+form .vh2{
+	margin-left: 125px;
+	width: 245px;
+}
+
+form .vh2:hover{
+	color: white;
+	background-color: red;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+form h2{	
+  font-size: 30px;
+  margin-left: 210px;
+  color: #fff;
+}
+
+form .regr{
+  font-size: 30px;
+  margin-left: 150px;
+  color: #fff;
+}
+
+form .sv{
+	font-size: 30px;
+	margin-left: 150px;
+	color: black;
+}
+
+
+/*Афиша*/
+.afisha{
+	border: 1px solid black;
+	border: transparent;
+	height: 605px;
+	margin-top: 100px;
+	background-color: rgb(255, 255, 255, 0.6);
+}
+
+.kino img{
+	height: 400px;
+	margin-left: 10px;
+}
+.kino p{
+	margin-left: 300px;
+	margin-top: -200px;
+}
+.kino h2{
+	margin-left: 20px;
+}
+
+
+
+/*Адрес*/
+.footer__adres{
+	width: 15vw;
+	color: black;
+	margin-top: 1vw;
+	font-size: 1vw;
+	margin-left: 10px;
+}
+
+footer{
+	background-color: #DCDCDC;
+   	border: 1px solid black;
+	border: transparent;
+   	height: 300px;
+    width: 100%;
+	margin-top: 150px;
+	background-color: rgb(255, 255, 255, 0.6);
+}
+
+/*Меню в подвале*/
+.footer ul{
+	display: flex;
+	margin-left: 300px;
+	margin-top: -100px;
+}
+
+.footer li{
+	display: flex;
+	margin-right: 20px;
+	color: black;
+}
+
+.footer a{
+  	color: black;
+  	text-decoration: none;
+}
+
+.footer a:hover {
+  	text-decoration: underline;
+ 
+}
+
+/*Кнопка наверх*/
+.topNubex {
+  	font-size: 1.5vw;
+  	text-decoration: none;
+  	color: #fff;
+  	position: fixed;
+  	right: 45px;
+  	bottom: 45px;
+}
