@@ -1,2 +1,6 @@
 User-agent: *
+Allow: /
 Disallow: /
+Disallaw: https://rishat10.github.io/index.html
+Sitemap: 
+Host: Rishat10.github.io
