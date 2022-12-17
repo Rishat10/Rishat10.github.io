@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/Adminka.css">
+</head>
+<body>
+
+<!-- Верхнее меню -->
+<div class="top__menu">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__logo"><a></a></div>
+			<div class="nav">  <!-- Навигационное меню -->
+				<a class="nav__link" href="../index.php">Главная</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Боковое меню -->
+
+	<div class="widget">
+	  <ul>
+	    <li><a href="">Панель состояния</a></li>
+	    <li><a href="index.php">Жанры</a></li>
+	    <li><a href="">Сеансы</a></li>
+	  </ul>
+	</div>
+<div class="gg">
+
+
+
+
+   <!--таблица сеансов-->
+<div class="btn">
+<a class="btn2" href="newnews.php">Добавление</a></th>
+</div>
+
+<table>
+  </tr>
+<tr>
+  <th>id</th>
+  <th>Название сеанса</th>
+  <th>цена</th>
+  <th>Жанр</th>
+  <th>Изображение</th>
+  </tr>
+ <tr>
+  <?php
+            $seans =  mysqli_query($connect, "SELECT * FROM `seans`");
+            $seans = mysqli_fetch_all($seans);
+            foreach ($seans as $seans) {
+                ?>
+                    <tr>
+                        <td><?= $seans[0] ?></td>
+                        <td><?= $seans[1] ?></td>
+                        <td><?= $seans[2] ?></td>
+                        <td><?= $seans[3] ?></td>
+                        <td><?= $seans[4] ?></td>
+                        <td><img src="<?= $seans[5] ?>" alt=""></td>
+
+                        <script type="text/javascript">
+                        
+    function confirmation() {
+      return confirm('Вы и вправду хотите удалить новость,нажмите ок');
+    }
+</script>
+                        <td><a href="updatenews.php?id=<?= $seans[0] ?>">&#9998;</a><a href="vendor/delitenews.php?id=<?= $news[0] ?>" onclick="return confirmation()"  >&#10006;</a></td>
+</tr>
+<?php
+            }
+        ?>
+</table>
+
+</div>
+
+</body>
+</html>
