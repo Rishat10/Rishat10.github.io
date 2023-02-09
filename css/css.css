@@ -153,8 +153,12 @@ body{
 
 /**/
 .text2{
+hight: 100px;
 background-color: rgb(255, 255, 255, 0.6);
 margin-top: 50px;
+}
+.text2 li{
+	background-color: rgb(255, 255, 255, 0.6);
 }
 
 /*о нас*/
