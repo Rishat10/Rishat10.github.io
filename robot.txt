@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Allow:ttps://rishat10.github.io/galary.html
 Disallow: /
 Disallaw: https://rishat10.github.io/admin.html
 Sitemap: https://rishat10.github.io/sitemap.xml
